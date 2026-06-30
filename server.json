@@ -1,0 +1,55 @@
+{
+	"$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+	"name": "io.github.nirholas/brain-mcp",
+	"title": "three.ws Brain",
+	"description": "List LLM providers and run chat completions through the three.ws multi-provider router.",
+	"websiteUrl": "https://three.ws",
+	"icons": [
+		{
+			"src": "https://three.ws/three-ws-mcp-icon.svg",
+			"mimeType": "image/svg+xml",
+			"sizes": [
+				"any"
+			]
+		}
+	],
+	"repository": {
+		"url": "https://github.com/nirholas/brain-mcp",
+		"source": "github"
+	},
+	"version": "0.1.0",
+	"packages": [
+		{
+			"registryType": "npm",
+			"identifier": "@three-ws/brain-mcp",
+			"version": "0.1.0",
+			"runtimeHint": "npx",
+			"transport": {
+				"type": "stdio"
+			},
+			"environmentVariables": [
+				{
+					"name": "THREE_WS_BASE",
+					"description": "Base URL of the three.ws API that fronts the LLM router (/api/brain/chat). Override only when self-hosting or targeting a preview deployment.",
+					"format": "string",
+					"isRequired": false,
+					"default": "https://three.ws"
+				},
+				{
+					"name": "THREE_WS_API_KEY",
+					"description": "Optional three.ws API key (sk_live_… / sk_test_…) or OAuth access token, sent as a Bearer token. Required only to use paid first-party flagships (Claude, GPT-4o, o3, Qwen Plus, DeepSeek). Free open-weight tiers (GPT-OSS 120B, NVIDIA NIM models) work with no key. Create one at https://three.ws/account.",
+					"format": "string",
+					"isRequired": false,
+					"isSecret": true
+				},
+				{
+					"name": "THREE_WS_TIMEOUT_MS",
+					"description": "Per-request timeout in milliseconds. Chat completions stream server-side and are collapsed into a single reply, so this is generous by default to ride out a long flagship answer.",
+					"format": "number",
+					"isRequired": false,
+					"default": "120000"
+				}
+			]
+		}
+	]
+}
