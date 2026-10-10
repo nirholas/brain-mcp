@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: "@three-ws/brain-mcp"
+abstract: "Any model, one interface: the three.ws multi-provider LLM router over MCP. Discover available providers/models (Claude, GPT-5, Grok, Qwen, DeepSeek, NVIDIA Nemotron, IBM Granite and more) and run a chat completion through whichever one fits. Free tiers need no key; paid flagships unlock with a three.ws API key."
+version: 0.1.4
+license: Apache-2.0
+repository-code: "https://github.com/nirholas/brain-mcp"
+url: "https://three.ws"
+authors:
+  - name: three.ws
+    website: "https://three.ws"

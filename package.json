@@ -1,0 +1,58 @@
+{
+	"name": "@three-ws/brain-mcp",
+	"version": "0.1.4",
+	"mcpName": "io.github.nirholas/brain-mcp",
+	"description": "Any model, one interface: the three.ws multi-provider LLM router over MCP. Discover available providers/models (Claude, GPT-5, Grok, Qwen, DeepSeek, NVIDIA Nemotron, IBM Granite and more) and run a chat completion through whichever one fits. Free tiers need no key; paid flagships unlock with a three.ws API key.",
+	"type": "module",
+	"author": "nirholas <support@three.ws>",
+	"license": "Apache-2.0",
+	"homepage": "https://nirholas.github.io/brain-mcp/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nirholas/brain-mcp.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nirholas/brain-mcp/issues"
+	},
+	"keywords": [
+		"mcp",
+		"three.ws",
+		"llm",
+		"router",
+		"claude",
+		"openai",
+		"chat-completion",
+		"multi-provider",
+		"model-context-protocol",
+		"mcp-server",
+		"ai-agents"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"server.json",
+		"README.md",
+		"LICENSE"
+	],
+	"bin": {
+		"brain-mcp": "src/index.js"
+	},
+	"main": "./src/index.js",
+	"exports": {
+		".": "./src/index.js"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"start": "node src/index.js",
+		"test": "node --test \"test/**/*.test.mjs\"",
+		"inspect": "npx -y @modelcontextprotocol/inspector node src/index.js"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.29.0",
+		"zod": "^3.23.8"
+	}
+}

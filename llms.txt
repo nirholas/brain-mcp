@@ -1,0 +1,20 @@
+# @three-ws/brain-mcp
+
+> Any model, one interface: the three.ws multi-provider LLM router over MCP. Discover available providers/models (Claude, GPT-5, Grok, Qwen, DeepSeek, NVIDIA Nemotron, IBM Granite and more) and run a chat completion through whichever one fits. Free tiers need no key; paid flagships unlock with a three.ws API key.
+
+@three-ws/brain-mcp is a Model Context Protocol server from three.ws. Install: `npx -y @three-ws/brain-mcp`.
+
+## Docs
+
+- [README](https://github.com/nirholas/brain-mcp/blob/main/README.md): install, configuration, full reference
+- [Documentation site](https://nirholas.github.io/brain-mcp/): the README as a web page
+- [Full text for LLMs](https://nirholas.github.io/brain-mcp/llms-full.txt): README inlined
+- [AGENTS.md](https://github.com/nirholas/brain-mcp/blob/main/AGENTS.md): guidance for coding agents
+
+## Project
+
+- [Source](https://github.com/nirholas/brain-mcp)
+- [npm](https://www.npmjs.com/package/@three-ws/brain-mcp)
+- [three.ws](https://three.ws): the platform this is part of
+- [Issues](https://github.com/nirholas/brain-mcp/issues)
+- [MCP Registry](https://registry.modelcontextprotocol.io/?q=io.github.nirholas%2Fbrain-mcp)
