@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "brain": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@three-ws/brain-mcp"
+      ],
+      "env": {
+        "THREE_WS_API_KEY": "${THREE_WS_API_KEY:-}"
+      }
+    }
+  }
+}
